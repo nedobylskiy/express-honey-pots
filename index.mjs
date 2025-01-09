@@ -3,6 +3,7 @@ import nextjsStaticFilesHoneypot from './honeyPots/nextjsStaticFiles/honeypot.mj
 import nowItsPHP from './honeyPots/nowItsPHP/honeypot.mjs'
 import oldApache from './honeyPots/oldApache/honeypot.mjs'
 import directoryListing from './honeyPots/directoryListing/honeypot.mjs'
+import phpShell from './honeyPots/phpShell/honeypot.mjs'
 
 export default function( options = {}) {
 
@@ -21,9 +22,15 @@ export default function( options = {}) {
         oldApache(router, options);
     }
 
+
+    if(typeof options.phpShell === 'undefined' || options.phpShell === true) {
+        phpShell(router, options);
+    }
+
     if(typeof options.directoryListing === 'undefined' || options.directoryListing === true) {
         directoryListing(router, options);
     }
+
 
 
 
