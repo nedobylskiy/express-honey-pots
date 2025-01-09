@@ -9,12 +9,12 @@
   "description": "This repository contains a collection of honeypots for the Express framework to prevent automated scanning.",
   "repository": {
     "type": "git",
-    "url": "git+github.com/nedobylskiy/express-honey-pots.git"
+    "url": "git+https://github.com/nedobylskiy/express-honey-pots.git"
   },
   "dependencies": {
     "express": "^4.21.2"
   },
-  "tags": [
+  "keywords": [
     "express",
     "honeypot",
     "security"
