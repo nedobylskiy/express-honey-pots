@@ -1,18 +1,22 @@
 {
   "name": "express-honeypots",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrei Nedobylskii",
   "license": "GPL-3.0-or-later",
-  "description": "",
+  "description": "This repository contains a collection of honeypots for the Express framework to prevent automated scanning.",
   "repository": {
     "type": "git",
     "url": "git+github.com/nedobylskiy/express-honey-pots.git"
   },
   "dependencies": {
     "express": "^4.21.2"
-  }
+  },
+  "tags": [
+    "express",
+    "honeypot",
+    "security"
+  ]
 }
