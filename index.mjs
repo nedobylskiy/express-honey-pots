@@ -5,7 +5,13 @@ import oldApache from './honeyPots/oldApache/honeypot.mjs'
 import directoryListing from './honeyPots/directoryListing/honeypot.mjs'
 import phpShell from './honeyPots/phpShell/honeypot.mjs'
 
-export default function( options = {}) {
+export default function( options = {
+    nextjsStaticFilesHoneypot: true,
+    nowItsPHP: true,
+    directoryListing: true,
+    phpShell: true,
+    oldApache: true
+}) {
 
     const router = express.Router();
 
