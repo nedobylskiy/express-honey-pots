@@ -4,13 +4,15 @@ import nowItsPHP from './honeyPots/nowItsPHP/honeypot.mjs'
 import oldApache from './honeyPots/oldApache/honeypot.mjs'
 import directoryListing from './honeyPots/directoryListing/honeypot.mjs'
 import phpShell from './honeyPots/phpShell/honeypot.mjs'
+import dotGit from './honeyPots/dotGit/honeypot.mjs'
 
 export default function( options = {
     nextjsStaticFilesHoneypot: true,
     nowItsPHP: true,
     directoryListing: true,
     phpShell: true,
-    oldApache: true
+    oldApache: true,
+    dotGit: true
 }) {
 
     const router = express.Router();
@@ -37,6 +39,9 @@ export default function( options = {
         directoryListing(router, options);
     }
 
+    if(typeof options.dotGit === 'undefined' || options.dotGit === true) {
+        dotGit(router, options);
+    }
 
 
 

@@ -37,7 +37,8 @@ app.use(honeypots({
     nowItsPHP: true,
     directoryListing: true,
     phpShell: true,
-    oldApache: true
+    oldApache: true,
+    dotGit: true,
 }));
 ```
 
@@ -56,6 +57,9 @@ This honeypot is designed to mimic the behavior of an Apache that allows directo
 
 ### PHP Shell
 This honeypot simulates a working php shell on /img/a.php
+
+### .git
+It seems that someone forgot to close access to the repository folder... :)
 
 ## Contributing
 
