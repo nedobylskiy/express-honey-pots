@@ -61,6 +61,10 @@ This honeypot simulates a working php shell on /img/a.php
 ### .git
 It seems that someone forgot to close access to the repository folder... :)
 
+## Results
+
+![img.png](img.png) ![img_1.png](img_1.png) ![img_2.png](img_2.png) ![img_3.png](img_3.png)
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
